@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970AD5812377E33F00DC2AF1 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970AD5802377E33F00DC2AF1 /* Friend.swift */; };
+		970AD5832377E37A00DC2AF1 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970AD5822377E37A00DC2AF1 /* Messages.swift */; };
+		972A7ED22377FE110073778B /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972A7ED12377FE110073778B /* DateFormatter.swift */; };
 		9741D68A23747B70000C58B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741D68923747B70000C58B9 /* AppDelegate.swift */; };
 		9741D68C23747B70000C58B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741D68B23747B70000C58B9 /* SceneDelegate.swift */; };
 		9741D68E23747B70000C58B9 /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741D68D23747B70000C58B9 /* FriendsController.swift */; };
@@ -22,8 +25,8 @@
 		9741D6C62374806A000C58B9 /* UITableView+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741D6C52374806A000C58B9 /* UITableView+Label.swift */; };
 		9741D6C823748071000C58B9 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741D6C723748071000C58B9 /* UICollectionView+Reusable.swift */; };
 		9741D6CA2374807F000C58B9 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741D6C92374807F000C58B9 /* Reusable.swift */; };
-		9741D6D023748156000C58B9 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741D6CE23748156000C58B9 /* FriendCell.swift */; };
-		9741D6D123748156000C58B9 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9741D6CF23748156000C58B9 /* FriendCell.xib */; };
+		9741D6D023748156000C58B9 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741D6CE23748156000C58B9 /* MessageCell.swift */; };
+		9741D6D123748156000C58B9 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9741D6CF23748156000C58B9 /* MessageCell.xib */; };
 		9741D6D6237489A0000C58B9 /* ORDesinables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741D6D5237489A0000C58B9 /* ORDesinables.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		970AD5802377E33F00DC2AF1 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		970AD5822377E37A00DC2AF1 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		972A7ED12377FE110073778B /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		9741D68623747B70000C58B9 /* FacebookMessangerClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookMessangerClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9741D68923747B70000C58B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9741D68B23747B70000C58B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,8 +72,8 @@
 		9741D6C52374806A000C58B9 /* UITableView+Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Label.swift"; sourceTree = "<group>"; };
 		9741D6C723748071000C58B9 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		9741D6C92374807F000C58B9 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
-		9741D6CE23748156000C58B9 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
-		9741D6CF23748156000C58B9 /* FriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
+		9741D6CE23748156000C58B9 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		9741D6CF23748156000C58B9 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		9741D6D5237489A0000C58B9 /* ORDesinables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ORDesinables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +134,8 @@
 				9741D69723747B71000C58B9 /* LaunchScreen.storyboard */,
 				9741D69A23747B71000C58B9 /* Info.plist */,
 				9741D69223747B70000C58B9 /* FacebookMessangerClone.xcdatamodeld */,
+				970AD5802377E33F00DC2AF1 /* Friend.swift */,
+				970AD5822377E37A00DC2AF1 /* Messages.swift */,
 			);
 			path = FacebookMessangerClone;
 			sourceTree = "<group>";
@@ -177,8 +185,8 @@
 		9741D6CD23748126000C58B9 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				9741D6CE23748156000C58B9 /* FriendCell.swift */,
-				9741D6CF23748156000C58B9 /* FriendCell.xib */,
+				9741D6CE23748156000C58B9 /* MessageCell.swift */,
+				9741D6CF23748156000C58B9 /* MessageCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -203,6 +211,7 @@
 		9741D6D423748989000C58B9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				972A7ED12377FE110073778B /* DateFormatter.swift */,
 				9741D6D5237489A0000C58B9 /* ORDesinables.swift */,
 				9741D6C123748055000C58B9 /* UITableView+Reusable.swift */,
 				9741D6C52374806A000C58B9 /* UITableView+Label.swift */,
@@ -321,7 +330,7 @@
 				9741D6BD23747F5D000C58B9 /* Main.storyboard in Resources */,
 				9741D69923747B71000C58B9 /* LaunchScreen.storyboard in Resources */,
 				9741D69623747B71000C58B9 /* Assets.xcassets in Resources */,
-				9741D6D123748156000C58B9 /* FriendCell.xib in Resources */,
+				9741D6D123748156000C58B9 /* MessageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,16 +356,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9741D6D6237489A0000C58B9 /* ORDesinables.swift in Sources */,
-				9741D6D023748156000C58B9 /* FriendCell.swift in Sources */,
+				9741D6D023748156000C58B9 /* MessageCell.swift in Sources */,
 				9741D6C02374804C000C58B9 /* AppStoryboard.swift in Sources */,
+				970AD5832377E37A00DC2AF1 /* Messages.swift in Sources */,
 				9741D68E23747B70000C58B9 /* FriendsController.swift in Sources */,
 				9741D68A23747B70000C58B9 /* AppDelegate.swift in Sources */,
 				9741D68C23747B70000C58B9 /* SceneDelegate.swift in Sources */,
 				9741D6CA2374807F000C58B9 /* Reusable.swift in Sources */,
 				9741D6C223748055000C58B9 /* UITableView+Reusable.swift in Sources */,
+				972A7ED22377FE110073778B /* DateFormatter.swift in Sources */,
 				9741D69423747B70000C58B9 /* FacebookMessangerClone.xcdatamodeld in Sources */,
 				9741D6C823748071000C58B9 /* UICollectionView+Reusable.swift in Sources */,
 				9741D6C62374806A000C58B9 /* UITableView+Label.swift in Sources */,
+				970AD5812377E33F00DC2AF1 /* Friend.swift in Sources */,
 				9741D6C42374805B000C58B9 /* UIView+Nib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
