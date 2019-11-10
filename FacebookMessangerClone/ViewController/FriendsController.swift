@@ -9,17 +9,19 @@
 import UIKit
 
 class FriendsController: UICollectionViewController {
+    
+    var messages: [Message]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.backgroundColor = .white
-        collectionView.register(cellType: FriendCell.self)
+        collectionView.register(cellType: MessageCell.self)
         
         let layout = UICollectionViewFlowLayout()
         layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
-        //layout.estimatedItemSize = CGSize(width: 1, height: 1)
-        
         collectionView.collectionViewLayout = layout
+        
+        setUpData()
 
     }
 }
@@ -27,31 +29,33 @@ class FriendsController: UICollectionViewController {
 extension FriendsController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        
+        guard let count = messages?.count else { return 0 }
+        return count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: FriendCell.self)
+        let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: MessageCell.self)
+        cell.configureCell(message: messages![indexPath.row])
         return cell
     }
 }
 
-//extension FriendsController: UICollectionViewDelegateFlowLayout {
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: (view.safeAreaLayoutGuide.layoutFrame.width), height: 80);
-//    }
-//
-//    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-//        collectionView?.collectionViewLayout.invalidateLayout();
-//    }
-//
-////    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-////        super.viewWillTransition(to: size, with: coordinator)
-////
-////        coordinator.animate(alongsideTransition: { (context) in
-////            self.collectionView.collectionViewLayout.invalidateLayout()
-////        }, completion: nil)
-////    }
-//}
 
+extension FriendsController {
+    
+    private func setUpData() {
+        
+        let mark = Friend()
+        mark.name = "Mark Zukarburg"
+        mark.profileImageName = "zukarbugProfile"
+        
+        let message = Message()
+        message.friend = mark
+        message.text = "Marlie, my name is Mark, nice to meet you"
+        message.date = Date()
+        
+        messages = [message]
+    }
+    
+}
